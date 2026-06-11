@@ -1,4 +1,4 @@
-# 🚛 AI-PROVIDERS
+# 🚛 LogiInsight By Squad AI-PROVIDERS
 
 ## Dashboard Inteligente para Monitoramento Logístico
 
@@ -8,8 +8,6 @@ Projeto desenvolvido para o desafio **AMT01 – Visualização de Dados**, com f
 
 # 📸 Demonstração
 
-> Após publicar o projeto, substitua o caminho abaixo pela imagem do dashboard.
-
 ```md
 ![Dashboard](img/dashboard1.png)
 ```
@@ -18,7 +16,7 @@ Projeto desenvolvido para o desafio **AMT01 – Visualização de Dados**, com f
 
 # 👥 Equipe
 
-**Nome da equipe:**
+**AI-PROVIDERS**
 
 ```
 Preencher
@@ -26,10 +24,10 @@ Preencher
 
 **Integrantes:**
 
-* Aluno 1
-* Aluno 2
-* Aluno 3
-* Aluno 4
+* Augusto
+* Gustavo
+* Ítalo
+* Riquelme
 
 ---
 
