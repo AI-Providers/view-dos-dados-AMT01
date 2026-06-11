@@ -1,0 +1,291 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background:
+    radial-gradient(circle at top left, #7c3aed55, transparent 35%),
+    linear-gradient(135deg, #12001f, #1f0a38 50%, #080012);
+  color: #f8fafc;
+  min-height: 100vh;
+}
+
+.hero {
+  padding: 48px 8%;
+  background: linear-gradient(135deg, rgba(168, 85, 247, .28), rgba(236, 72, 153, .12));
+  border-bottom: 1px solid rgba(255,255,255,.12);
+}
+
+.tag {
+  color: #c084fc;
+  text-transform: uppercase;
+  font-size: .8rem;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  max-width: 760px;
+  color: #d8b4fe;
+  line-height: 1.6;
+}
+
+.dashboard {
+  width: min(1180px, 92%);
+  margin: 32px auto;
+}
+
+.filters {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,.16);
+  background: rgba(255,255,255,.08);
+  color: #fff;
+  outline: none;
+}
+
+select option {
+  color: #111827;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.card,
+.panel,
+.insight,
+.priority,
+.table-box,
+.logic {
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.14);
+  border-radius: 24px;
+  box-shadow: 0 20px 50px rgba(0,0,0,.24);
+  backdrop-filter: blur(12px);
+}
+
+.card {
+  padding: 24px;
+}
+
+.card span {
+  color: #d8b4fe;
+  font-size: .9rem;
+}
+
+.card strong {
+  display: block;
+  font-size: 2.2rem;
+  margin-top: 8px;
+}
+
+.card.danger strong {
+  color: #fb7185;
+}
+
+.card.warning strong {
+  color: #facc15;
+}
+
+.card.accent strong {
+  color: #38bdf8;
+}
+
+.insight {
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.insight h2,
+.panel h2,
+.priority h2,
+.table-box h2,
+.logic h2 {
+  margin-bottom: 8px;
+}
+
+.insight p,
+.panel p,
+.priority p,
+.logic p {
+  color: #ddd6fe;
+  line-height: 1.6;
+}
+
+.grid-charts {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.panel {
+  padding: 22px;
+  min-height: 340px;
+}
+
+.panel.large {
+  grid-row: span 2;
+}
+
+canvas {
+  margin-top: 18px;
+  max-height: 260px;
+}
+
+.priority {
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.priority-list {
+  display: grid;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.priority-item {
+  display: grid;
+  grid-template-columns: 48px 1fr auto auto;
+  align-items: center;
+  gap: 14px;
+  background: rgba(255,255,255,.08);
+  border-radius: 18px;
+  padding: 14px;
+  border-left: 5px solid #a855f7;
+}
+
+.position {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #7c3aed;
+  font-weight: bold;
+}
+
+.status {
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: .8rem;
+  font-weight: bold;
+}
+
+.status.ok {
+  background: rgba(34,197,94,.18);
+  color: #86efac;
+}
+
+.status.alerta {
+  background: rgba(250,204,21,.18);
+  color: #fde047;
+}
+
+.status.critico {
+  background: rgba(244,63,94,.18);
+  color: #fb7185;
+}
+
+.delay {
+  font-weight: bold;
+  color: #f0abfc;
+}
+
+.table-box {
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-top: 16px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 780px;
+}
+
+th,
+td {
+  padding: 14px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255,255,255,.10);
+}
+
+th {
+  color: #c084fc;
+  font-size: .85rem;
+  text-transform: uppercase;
+}
+
+tr:hover {
+  background: rgba(255,255,255,.06);
+}
+
+.logic {
+  padding: 24px;
+  margin-bottom: 32px;
+}
+
+.logic-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.logic-grid div {
+  padding: 18px;
+  border-radius: 18px;
+  background: rgba(255,255,255,.08);
+  text-align: center;
+  color: #ddd6fe;
+}
+
+.logic-grid strong {
+  color: #fff;
+}
+
+footer {
+  text-align: center;
+  color: #c4b5fd;
+  padding: 28px;
+  border-top: 1px solid rgba(255,255,255,.10);
+}
+
+@media (max-width: 900px) {
+  .filters,
+  .cards,
+  .grid-charts,
+  .logic-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .priority-item {
+    grid-template-columns: 1fr;
+  }
+}

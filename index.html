@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI-PROVIDERS - AMT01</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+  <header class="hero">
+    <div>
+      <p class="tag">AMT01 • Visualização de Dados</p>
+      <h1> AI-PROVIDERS Desafio dos Dados</h1>
+      <p class="subtitle">
+        Painel inteligente para análise de atrasos logísticos por região, transportadora e nível de criticidade.
+      </p>
+    </div>
+  </header>
+
+  <main class="dashboard">
+    <section class="filters">
+      <input id="searchInput" type="text" placeholder="Buscar por ID, cidade, região ou transportadora..." />
+
+      <select id="regionFilter">
+        <option value="Todas">Todas as regiões</option>
+      </select>
+
+      <select id="carrierFilter">
+        <option value="Todas">Todas as transportadoras</option>
+      </select>
+
+      <select id="statusFilter">
+        <option value="Todos">Todos os status</option>
+        <option value="No prazo">No prazo</option>
+        <option value="Atenção">Atenção</option>
+        <option value="Crítico">Crítico</option>
+      </select>
+    </section>
+
+    <section class="cards">
+      <div class="card">
+        <span>Total analisado</span>
+        <strong id="totalEntregas">0</strong>
+      </div>
+
+      <div class="card danger">
+        <span>Entregas atrasadas</span>
+        <strong id="totalAtrasadas">0</strong>
+      </div>
+
+      <div class="card warning">
+        <span>Taxa de atraso</span>
+        <strong id="taxaAtraso">0%</strong>
+      </div>
+
+      <div class="card accent">
+        <span>Maior atraso</span>
+        <strong id="maiorAtraso">0 dias</strong>
+      </div>
+    </section>
+
+    <section class="insight">
+      <h2>Insight operacional</h2>
+      <p id="insightTexto">Carregando análise...</p>
+    </section>
+
+    <section class="grid-charts">
+      <div class="panel large">
+        <h2>Atrasos por transportadora</h2>
+        <p>Soma de dias de atraso por empresa responsável.</p>
+        <canvas id="chartTransportadora"></canvas>
+      </div>
+
+      <div class="panel">
+        <h2>Status das entregas</h2>
+        <p>Distribuição por nível de criticidade.</p>
+        <canvas id="chartStatus"></canvas>
+      </div>
+
+      <div class="panel">
+        <h2>Atrasos por região</h2>
+        <p>Visualização radial dos gargalos regionais.</p>
+        <canvas id="chartRegiao"></canvas>
+      </div>
+    </section>
+
+    <section class="priority">
+      <div>
+        <h2>Fila de prioridade</h2>
+        <p>Entregas ordenadas pelo maior atraso operacional.</p>
+      </div>
+
+      <div id="priorityList" class="priority-list"></div>
+    </section>
+
+    <section class="table-box">
+      <h2>Tabela operacional consolidada</h2>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Cidade</th>
+              <th>Região</th>
+              <th>Transportadora</th>
+              <th>Prazo</th>
+              <th>Dias reais</th>
+              <th>Atraso</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="logic">
+      <h2>Lógica utilizada</h2>
+      <p>
+        O atraso foi calculado pela diferença entre os dias reais e o prazo contratado.
+        Quando a entrega ocorreu dentro ou antes do prazo, o atraso foi considerado igual a zero.
+      </p>
+
+      <div class="logic-grid">
+        <div>0 dias<br><strong>No prazo</strong></div>
+        <div>1 a 2 dias<br><strong>Atenção</strong></div>
+        <div>3 dias ou mais<br><strong>Crítico</strong></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    RotaVision Analytics • Dashboard educacional desenvolvido com HTML, CSS, JavaScript e Chart.js
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
