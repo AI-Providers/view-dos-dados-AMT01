@@ -4,23 +4,16 @@
 
 Projeto desenvolvido para o desafio **AMT01 – Visualização de Dados**, com foco na criação de um painel analítico capaz de transformar informações operacionais em indicadores estratégicos para apoio à tomada de decisão.
 
----
 
 # 📸 Demonstração
 
-```md
-![Dashboard](./img/dashboard1.png)
-```
 
----
+![Dashboard](./img/dashboard1.png)
+
 
 # 👥 Equipe
 
 **AI-PROVIDERS**
-
-```
-Preencher
-```
 
 **Integrantes:**
 
