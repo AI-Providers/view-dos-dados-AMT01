@@ -155,9 +155,7 @@ A construção do dashboard ocorreu em etapas:
 
 **Link do Dashboard:**
 
-```
-Inserir aqui a URL publicada.
-```
+https://ai-providers.github.io/view-dos-dados-AMT01/
 
 ---
 
