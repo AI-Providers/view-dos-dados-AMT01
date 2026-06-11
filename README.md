@@ -9,7 +9,7 @@ Projeto desenvolvido para o desafio **AMT01 – Visualização de Dados**, com f
 # 📸 Demonstração
 
 ```md
-![Dashboard](img/dashboard1.png)
+![Dashboard](./img/dashboard1.png)
 ```
 
 ---
