@@ -1,14 +1,14 @@
 const entregas = [
-  { id: 301, cidade: "São Paulo", regiao: "Sudeste", transportadora: "RotaMax", prazo: 3, diasReais: 7 },
-  { id: 302, cidade: "Curitiba", regiao: "Sul", transportadora: "ViaCargo", prazo: 5, diasReais: 5 },
-  { id: 303, cidade: "Recife", regiao: "Nordeste", transportadora: "FlashLog", prazo: 4, diasReais: 9 },
-  { id: 304, cidade: "Manaus", regiao: "Norte", transportadora: "RotaMax", prazo: 6, diasReais: 4 },
-  { id: 305, cidade: "Goiânia", regiao: "Centro-Oeste", transportadora: "ViaCargo", prazo: 2, diasReais: 6 },
-  { id: 306, cidade: "Porto Alegre", regiao: "Sul", transportadora: "FlashLog", prazo: 5, diasReais: 12 },
-  { id: 307, cidade: "Florianópolis", regiao: "Sul", transportadora: "RotaMax", prazo: 6, diasReais: 9 },
-  { id: 308, cidade: "Rio de Janeiro", regiao: "Sudeste", transportadora: "ViaCargo", prazo: 3, diasReais: 4 },
-  { id: 309, cidade: "Belém", regiao: "Norte", transportadora: "FlashLog", prazo: 5, diasReais: 5 },
-  { id: 310, cidade: "Salvador", regiao: "Nordeste", transportadora: "ViaCargo", prazo: 4, diasReais: 8 }
+  { id: "301", cidade: "São Paulo", regiao: "Sudeste", transportadora: "RotaMax", prazo: 3, diasReais: 7 },
+  { id: "302", cidade: "Curitiba", regiao: "Sul", transportadora: "ViaCargo", prazo: 5, diasReais: 5 },
+  { id: "303", cidade: "Recife", regiao: "Nordeste", transportadora: "FlashLog", prazo: 4, diasReais: 9 },
+  { id: "304", cidade: "Manaus", regiao: "Norte", transportadora: "RotaMax", prazo: 6, diasReais: 4 },
+  { id: "305", cidade: "Goiânia", regiao: "Centro-Oeste", transportadora: "ViaCargo", prazo: 2, diasReais: 6 },
+  { id: "306", cidade: "Porto Alegre", regiao: "Sul", transportadora: "FlashLog", prazo: 5, diasReais: 12 },
+  { id: "307", cidade: "Florianópolis", regiao: "Sul", transportadora: "RotaMax", prazo: 6, diasReais: 9 },
+  { id: "308", cidade: "Rio de Janeiro", regiao: "Sudeste", transportadora: "ViaCargo", prazo: 3, diasReais: 4 },
+  { id: "309", cidade: "Belém", regiao: "Norte", transportadora: "FlashLog", prazo: 5, diasReais: 5 },
+  { id: "310", cidade: "Salvador", regiao: "Nordeste", transportadora: "ViaCargo", prazo: 4, diasReais: 8 }
 ];
 
 let chartTransportadora;
